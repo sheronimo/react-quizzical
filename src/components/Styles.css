@@ -1,0 +1,49 @@
+/* Utility/Shared */
+.btn {
+	font-weight: 500;
+	background-color: hsl(230, 34%, 46%);
+	color: hsl(0, 0%, 100%);
+	padding: 0.625rem 1.375rem;
+	border-radius: 15px;
+}
+
+/* Start Screen */
+.start-screen {
+	text-align: center;
+}
+
+.heading {
+	font-size: 2rem;
+	margin-bottom: 1.1875rem;
+}
+
+.desc {
+	margin-bottom: 30px;
+}
+
+.start-screen .btn {
+	padding: 1rem 3.75rem;
+}
+
+/* Question Component */
+.question-group {
+	width: 100%;
+	padding-block: 15px;
+	border-bottom: 1px solid hsl(231, 41%, 90%);
+}
+
+.answers {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 0.75rem;
+	gap: 0.75rem;
+}
+
+.answer {
+	background-color: transparent;
+	color: inherit;
+	font-weight: 500;
+	padding: 0.5rem 1rem;
+	border: 1.5px solid hsl(230, 34%, 46%);
+	border-radius: 1.5rem;
+}
