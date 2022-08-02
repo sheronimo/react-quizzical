@@ -1,0 +1,16 @@
+.start-screen {
+	text-align: center;
+}
+
+.heading {
+	font-size: 2rem;
+	margin-bottom: 1.1875rem;
+}
+
+.desc {
+	margin-bottom: 30px;
+}
+
+.start-screen .btn {
+	padding: 1rem 3.75rem;
+}
