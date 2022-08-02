@@ -75,6 +75,23 @@ const Quiz = () => {
 		setScore(0);
 	}
 
+	function selectAnswer(qId, aId) {
+		setQuestions((prevQuestions) =>
+			prevQuestions.map((q) =>
+				q.id !== qId
+					? q
+					: {
+							...q,
+							answers: q.answers.map((a) =>
+								a.id !== aId
+									? { ...a, isSelected: false }
+									: { ...a, isSelected: true }
+							)
+					  }
+			)
+		);
+	}
+
 };
 
 export default Quiz;
