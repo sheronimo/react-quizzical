@@ -1,5 +1,6 @@
 import './Question.css';
 
+const Question = (props) => {
 	const className = (answer) => {
 		let name = 'answer';
 		let isCorrect = answer.answer === props.correctAnswer;
