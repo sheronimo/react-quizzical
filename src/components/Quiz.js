@@ -106,6 +106,27 @@ const Quiz = () => {
 		setGameFinished(true);
 	}
 
+	return loading ? (
+		<p>Loading questions...</p>
+	) : (
+		<div className='quiz'>
+			{questionElements}
+			{gameFinished ? (
+				<div className='finished'>
+					<p className='score'>You scored {score}/5 correct answers</p>
+					<button className='btn quiz-btn' onClick={resetQuiz}>
+						Play Again
+					</button>
+				</div>
+			) : (
+				<div className='finished'>
+					<button className='btn quiz-btn' onClick={checkAnswers}>
+						Check Answers
+					</button>
+				</div>
+			)}
+		</div>
+	);
 };
 
 export default Quiz;
