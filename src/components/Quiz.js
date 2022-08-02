@@ -4,7 +4,10 @@ import Question from './Question';
 import './Quiz.css';
 
 const Quiz = () => {
-	return <Question />;
+	const [questions, setQuestions] = useState([]);
+	const [loading, setLoading] = useState(false);
+	const [gameFinished, setGameFinished] = useState(false);
+	const [score, setScore] = useState(0);
 };
 
 export default Quiz;
