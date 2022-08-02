@@ -9,11 +9,7 @@ function App() {
 		setQuiz(true);
 	}
 
-	return (
-		<main className='main'>
-			{quiz ? <Quiz /> : <Start startQuiz={startQuiz} />}
-		</main>
-	);
+	return <main>{quiz ? <Quiz /> : <Start startQuiz={startQuiz} />}</main>;
 }
 
 export default App;
