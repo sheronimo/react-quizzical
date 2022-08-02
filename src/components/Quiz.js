@@ -8,6 +8,11 @@ const Quiz = () => {
 	const [loading, setLoading] = useState(false);
 	const [gameFinished, setGameFinished] = useState(false);
 	const [score, setScore] = useState(0);
+
+	useEffect(() => {
+		fetchQuestions();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 	function fetchQuestions() {
 		setLoading(true);
 		fetch(
