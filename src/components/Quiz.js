@@ -92,6 +92,20 @@ const Quiz = () => {
 		);
 	}
 
+	function checkAnswers() {
+		questions.forEach((q) => {
+			const selectedAnswer = q.answers.find((a) => a.isSelected);
+
+			if (selectedAnswer) {
+				if (selectedAnswer.answer === q.correctAnswer) {
+					setScore((prevScore) => prevScore + 1);
+				}
+			}
+		});
+
+		setGameFinished(true);
+	}
+
 };
 
 export default Quiz;
