@@ -1,0 +1,25 @@
+.quiz {
+	max-width: 62.5rem;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+}
+
+.finished {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.quiz-btn {
+	max-width: 10rem;
+	align-self: center;
+}
+
+.score {
+	font-weight: 700;
+	font-size: 1.25rem;
+}
