@@ -17,14 +17,20 @@ import './Question.css';
 
 		return name;
 	};
+
 	return (
 		<div className='question-group'>
-			<h2>How would one say goodbye in Spanish?</h2>
+			<h2 dangerouslySetInnerHTML={{ __html: props.question }}></h2>
 			<div className='answers'>
-				<button className='answer'>Adios</button>
-				<button className='answer'>Hola</button>
-				<button className='answer'>Au Revoir</button>
-				<button className='answer'>Salir</button>
+				{props.answers.map((a) => (
+					<button
+						disabled={props.finished}
+						key={a.id}
+						id={a.id}
+						className={className(a)}
+						onClick={props.selectAnswer}
+						dangerouslySetInnerHTML={{ __html: a.answer }}></button>
+				))}
 			</div>
 		</div>
 	);
