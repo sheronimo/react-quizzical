@@ -1,4 +1,4 @@
-import './Styles.css';
+import './Start.css';
 
 const Start = (props) => {
 	return (
