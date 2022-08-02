@@ -35,6 +35,14 @@ const Quiz = () => {
 				setLoading(false);
 			});
 	}
+
+	function returnAnswers(arr) {
+		return arr.map((item) => ({
+			id: nanoid(),
+			answer: item,
+			isSelected: false
+		}));
+	}
 };
 
 export default Quiz;
