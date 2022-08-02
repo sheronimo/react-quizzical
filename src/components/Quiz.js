@@ -13,6 +13,20 @@ const Quiz = () => {
 		fetchQuestions();
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
+
+	const questionElements = questions.map((q) => {
+		return (
+			<Question
+				key={q.id}
+				question={q.question}
+				answers={q.answers}
+				correctAnswer={q.correctAnswer}
+				selectAnswer={(e) => selectAnswer(q.id, e.target.id)}
+				finished={gameFinished}
+			/>
+		);
+	});
+
 	function fetchQuestions() {
 		setLoading(true);
 		fetch(
