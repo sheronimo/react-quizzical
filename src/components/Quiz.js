@@ -69,6 +69,12 @@ const Quiz = () => {
 		return array;
 	}
 
+	function resetQuiz() {
+		setGameFinished(false);
+		fetchQuestions();
+		setScore(0);
+	}
+
 };
 
 export default Quiz;
