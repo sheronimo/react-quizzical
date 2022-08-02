@@ -22,3 +22,11 @@ button {
 	cursor: pointer;
 	font: inherit;
 }
+
+.btn {
+	font-weight: 500;
+	background-color: hsl(230, 34%, 46%);
+	color: hsl(0, 0%, 100%);
+	padding: 0.625rem 1.375rem;
+	border-radius: 15px;
+}
